@@ -431,6 +431,7 @@ jobs:
                   size = download_file(result['u'], fp)
                   if size:
                       print(f'✅ Saved to {cn}_videos/ ({size/1e6:.1f}MB)')
+                      split_file(fp, SP)
               else:
                   print('❌ Failed'); sys.exit(1)
           
